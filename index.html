@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grahms Fair value</title>
+</head>
+<script type="text/javascript">
+	
+
+
+	function Calculate(){
+	var x=document.getElementById('a').value;
+	var y=document.getElementById('b').value;
+	var z=Math.sqrt (22.5*x*y)
+	document.getElementById('info').innerHTML=z;
+	}
+
+</script>
+<body>
+	<h1>Calculate Graham's Fair value</h1> <br>
+	<p>Enter eps of stock </p>
+	<input type="number"  placeholder="enter eps of stock" id="a"><br>
+	<p>Enter book value of stock </p>
+	<input type="number" placeholder="enter book value of stock" id="b"><br>
+	<p>Click to find out Grahms fair value </p>
+	<button onclick="Calculate()">Calculate</button>
+	<h2 id="info"></h2>
+</body>
+</html>
